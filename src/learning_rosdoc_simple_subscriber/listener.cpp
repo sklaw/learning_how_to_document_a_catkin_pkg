@@ -8,6 +8,7 @@
 #include "ros/ros.h"
 #include "std_msgs/String.h"
 #include "learning_rosdoc/MyString.h"
+#include "learning_rosdoc/listener.h"
 
 /** \breif A callback function for chatter topic.
  *
@@ -16,7 +17,7 @@
  *  topic. The printing is implemented by ROS_INFO
  *  instead of printf or cout.
 */
-void chatterCallback(
+void my_ns::chatterCallback(
     const learning_rosdoc::MyString::ConstPtr& msg /**< [in] received message instance. */
 )
 {
@@ -29,7 +30,7 @@ int main(int argc, char **argv)
 
   ros::NodeHandle n;
 
-  ros::Subscriber sub = n.subscribe("chatter", 1000, chatterCallback);
+  ros::Subscriber sub = n.subscribe("chatter", 1000, my_ns::chatterCallback);
 
   ros::spin();
 
