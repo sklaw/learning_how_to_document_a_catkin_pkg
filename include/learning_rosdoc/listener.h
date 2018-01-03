@@ -1,3 +1,9 @@
+/** \file
+ *  \brief Header file for listener.cpp
+ *
+ *  Contains declaration of my_ns namespace. Include-guarded of cource.
+*/
+
 #ifndef LISTENER_H
 #define LISTENER_H
 
