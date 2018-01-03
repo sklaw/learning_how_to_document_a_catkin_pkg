@@ -10,17 +10,10 @@
 #include "learning_rosdoc/MyString.h"
 #include "learning_rosdoc/listener.h"
 
-/** \breif A callback function for chatter topic.
- *
- *  A Callback function that prints the content of
- *  learning_rosdoc::MyString received via chatter
- *  topic. The printing is implemented by ROS_INFO
- *  instead of printf or cout.
+/** 
+ *  NOTE: The printing is implemented by ROS_INFO instead of printf or cout.
 */
-void my_ns::chatterCallback(
-    const learning_rosdoc::MyString::ConstPtr& msg /**< [in] received message instance. */
-)
-{
+void my_ns::chatterCallback(const learning_rosdoc::MyString::ConstPtr& msg) {
   ROS_INFO("I heard: [%s]", msg->std_str.data.c_str());
 }
 
