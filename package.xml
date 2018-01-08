@@ -47,6 +47,8 @@
   <run_depend>rospy</run_depend>
   <run_depend>std_msgs</run_depend>
 
+  <!-- Help sphinx to get catkin package's version -->
+  <build_depend>python-catkin-pkg</build_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
