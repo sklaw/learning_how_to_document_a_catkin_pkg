@@ -11,7 +11,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-
+   intro
+   tutorial
+   CHANGELOG
 
 Indices and tables
 ==================

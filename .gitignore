@@ -106,7 +106,4 @@ venv.bak/
 # vim files
 .*.swp
 
-doc/*
-!doc/conf.py
-!doc/index.rst
-!doc/Makefile
+doc/html/

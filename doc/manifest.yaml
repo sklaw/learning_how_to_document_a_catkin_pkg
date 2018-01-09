@@ -1,0 +1,21 @@
+actions: []
+authors: ''
+brief: ''
+bugtracker: ''
+depends:
+- catkin
+- roscpp
+- message_runtime
+- std_msgs
+- python-catkin-pkg
+- rospy
+- message_generation
+description: The learning_rosdoc package
+license: TODO
+maintainers: sklaw <sklaw@todo.todo>
+msgs:
+- MyString
+package_type: package
+repo_url: ''
+srvs: []
+url: ''
